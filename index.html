@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grade 11 Physics - Waves & Sound Exam</title>
+  <title>Grade 11 Physics (Inspire) - Chapter 3 Exam</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <style>
@@ -22,7 +22,7 @@
     }
     .fade-in { animation: fadeIn 0.5s ease-in; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .physics { font-family: 'Times New Roman', serif; letter-spacing: 0.5px; direction: ltr; display: inline-block; }
+    .phys { font-family: 'Times New Roman', serif; letter-spacing: 0.5px; direction: ltr; display: inline-block; }
     .timer-warning { color: #dc2626 !important; animation: pulse 1s infinite; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
   </style>
@@ -50,8 +50,8 @@
   <!-- Header -->
   <header class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-md mb-8 border-l-4 border-indigo-600">
     <div class="text-center">
-      <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">⚛️ Grade 11 Physics Exam</h1>
-      <h2 class="text-lg text-indigo-600 font-semibold">Chapter 3: Waves & Sound (Inspire Curriculum)</h2>
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">⚛️ Grade 11 Physics (Inspire)</h1>
+      <h2 class="text-lg text-indigo-600 font-semibold">Chapter 3: Rotational Motion & Momentum</h2>
     </div>
     <div class="mt-4 flex flex-wrap justify-center gap-4 text-sm text-gray-600">
       <span>📅 Date: <input type="text" class="border-b border-gray-400 bg-transparent w-28 text-center"></span>
@@ -64,275 +64,275 @@
 
   <main class="max-w-4xl mx-auto space-y-8">
 
-    <!-- Topic 1: Wave Properties -->
+    <!-- Topic 1: Rotational Kinematics -->
     <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="1">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 1: Wave Properties & Characteristics</h2>
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 1: Rotational Kinematics</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>1.</strong> What is the relationship between wave speed (v), frequency (f), and wavelength (λ)?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="a" class="mr-2"> a) <span class="physics">v = fλ</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="b" class="mr-2"> b) <span class="physics">v = f/λ</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="c" class="mr-2"> c) <span class="physics">v = λ/f</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="d" class="mr-2"> d) <span class="physics">v = f + λ</span></label>
+          <strong>1.</strong> The relationship between linear speed (v) and angular speed (ω) is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="a" class="mr-2"> a) <span class="phys">v = rω</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="b" class="mr-2"> b) <span class="phys">v = ω/r</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="c" class="mr-2"> c) <span class="phys">v = r/ω</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="d" class="mr-2"> d) <span class="phys">v = ω²r</span></label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>2.</strong> The amplitude of a wave determines its:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="a" class="mr-2"> a) Speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="b" class="mr-2"> b) Energy/intensity</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="c" class="mr-2"> c) Frequency</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="d" class="mr-2"> d) Wavelength</label>
+          <strong>2.</strong> Angular acceleration (α) is defined as:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="a" class="mr-2"> a) <span class="phys">Δθ/Δt</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="b" class="mr-2"> b) <span class="phys">Δω/Δt</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="c" class="mr-2"> c) <span class="phys">v²/r</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="d" class="mr-2"> d) <span class="phys">rω</span></label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>3.</strong> A wave has frequency 50 Hz and wavelength 2 m. What is its speed?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="a" class="mr-2"> a) 25 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="b" class="mr-2"> b) 50 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="c" class="mr-2"> c) 100 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="d" class="mr-2"> d) 200 m/s</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c) v = fλ = 50×2 = 100 m/s</div>
+          <strong>3.</strong> All points on a rigid rotating object share the same:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="a" class="mr-2"> a) Linear speed</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="b" class="mr-2"> b) Centripetal acceleration</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="c" class="mr-2"> c) Angular velocity (ω)</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="d" class="mr-2"> d) Radius</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>4.</strong> Which type of wave requires a medium to propagate?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="a" class="mr-2"> a) Electromagnetic waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="b" class="mr-2"> b) Mechanical waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="c" class="mr-2"> c) Both</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="d" class="mr-2"> d) Neither</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>4.</strong> Convert 30 rpm to rad/s:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="a" class="mr-2"> a) π rad/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="b" class="mr-2"> b) 2π rad/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="c" class="mr-2"> c) 30 rad/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="d" class="mr-2"> d) 0.5 rad/s</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 2: Wave Types & Polarization -->
+    <!-- Topic 2: Rotational Dynamics & Torque -->
     <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="2">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 2: Wave Types & Polarization</h2>
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 2: Rotational Dynamics & Torque</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>5.</strong> In a transverse wave, particles oscillate:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="a" class="mr-2"> a) Parallel to wave direction</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="b" class="mr-2"> b) Perpendicular to wave direction</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="c" class="mr-2"> c) In circular paths</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="d" class="mr-2"> d) Randomly</label>
+          <strong>5.</strong> Newton's second law for rotation is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="a" class="mr-2"> a) <span class="phys">F = ma</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="b" class="mr-2"> b) <span class="phys">τ = Iα</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="c" class="mr-2"> c) <span class="phys">L = Iω</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="d" class="mr-2"> d) <span class="phys">τ = rF</span></label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>6.</strong> Sound waves in air are:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="a" class="mr-2"> a) Transverse waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="b" class="mr-2"> b) Longitudinal waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="c" class="mr-2"> c) Surface waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="d" class="mr-2"> d) Electromagnetic waves</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>6.</strong> Torque depends on all EXCEPT:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="a" class="mr-2"> a) Angular velocity</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="b" class="mr-2"> b) Applied force magnitude</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="c" class="mr-2"> c) Distance from axis</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="d" class="mr-2"> d) Angle between force and lever arm</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>7.</strong> Polarization is a property of:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="a" class="mr-2"> a) Longitudinal waves only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="b" class="mr-2"> b) Transverse waves only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="c" class="mr-2"> c) Both types</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="d" class="mr-2"> d) Neither type</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>7.</strong> Maximum torque is produced when the force is applied at an angle of:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="a" class="mr-2"> a) 0°</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="b" class="mr-2"> b) 45°</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="c" class="mr-2"> c) 90°</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="d" class="mr-2"> d) 180°</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>8.</strong> Which wave can be polarized?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="a" class="mr-2"> a) Sound in air</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="b" class="mr-2"> b) Light</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="c" class="mr-2"> c) Water surface waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="d" class="mr-2"> d) Seismic P-waves</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>8.</strong> If the lever arm length doubles while force stays constant, torque:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="a" class="mr-2"> a) Doubles</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="b" class="mr-2"> b) Halves</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="c" class="mr-2"> c) Quadruples</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="d" class="mr-2"> d) Remains unchanged</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 3: Wave Behavior -->
+    <!-- Topic 3: Moment of Inertia & Rotational Energy -->
     <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="3">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 3: Wave Behavior (Reflection, Refraction, Diffraction)</h2>
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 3: Moment of Inertia & Rotational Energy</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>9.</strong> When a wave reflects from a fixed end, it:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="a" class="mr-2"> a) Inverts (180° phase change)</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="b" class="mr-2"> b) Does not invert</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="c" class="mr-2"> c) Doubles in amplitude</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="d" class="mr-2"> d) Changes frequency</label>
+          <strong>9.</strong> Moment of inertia (I) measures an object's:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="a" class="mr-2"> a) Linear mass</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="b" class="mr-2"> b) Resistance to rotational acceleration</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="c" class="mr-2"> c) Center of mass position</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="d" class="mr-2"> d) Angular momentum</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>10.</strong> For equal mass and radius, which has the largest I?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="a" class="mr-2"> a) Hoop (mass at rim)</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="b" class="mr-2"> b) Solid disk</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="c" class="mr-2"> c) Solid sphere</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="d" class="mr-2"> d) Point mass at center</label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>10.</strong> Refraction occurs when a wave:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="a" class="mr-2"> a) Bounces off a surface</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="b" class="mr-2"> b) Changes speed entering a new medium</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="c" class="mr-2"> c) Bends around an obstacle</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="d" class="mr-2"> d) Combines with another wave</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>11.</strong> Rotational kinetic energy is calculated as:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="a" class="mr-2"> a) <span class="phys">½Iω²</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="b" class="mr-2"> b) <span class="phys">Iω</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="c" class="mr-2"> c) <span class="phys">½mv²</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="d" class="mr-2"> d) <span class="phys">τθ</span></label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>11.</strong> Diffraction is most noticeable when:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="a" class="mr-2"> a) Wavelength ≪ obstacle size</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="b" class="mr-2"> b) Wavelength ≈ obstacle size</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="c" class="mr-2"> c) Wavelength ≫ obstacle size</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="d" class="mr-2"> d) Frequency is very high</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>12.</strong> Snell's Law relates:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="a" class="mr-2"> a) Angle of incidence and reflection</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="b" class="mr-2"> b) Angles and indices of refraction</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="c" class="mr-2"> c) Frequency and wavelength</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="d" class="mr-2"> d) Amplitude and intensity</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) n₁sinθ₁ = n₂sinθ₂</div>
+          <strong>12.</strong> An ice skater pulls arms in while spinning. What happens?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="a" class="mr-2"> a) I decreases, ω increases</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="b" class="mr-2"> b) I increases, ω decreases</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="c" class="mr-2"> c) Both I and ω decrease</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="d" class="mr-2"> d) Angular momentum decreases</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 4: Sound Waves -->
+    <!-- Topic 4: Equilibrium & Center of Mass -->
     <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="4">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 4: Sound Waves & Properties</h2>
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 4: Equilibrium & Center of Mass</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>13.</strong> The speed of sound in air at 20°C is approximately:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="a" class="mr-2"> a) 330 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="b" class="mr-2"> b) 343 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="c" class="mr-2"> c) 300 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="d" class="mr-2"> d) 400 m/s</label>
+          <strong>13.</strong> Conditions for static equilibrium are:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="a" class="mr-2"> a) <span class="phys">∑F ≠ 0, ∑τ = 0</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="b" class="mr-2"> b) <span class="phys">∑F = 0 and ∑τ = 0</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="c" class="mr-2"> c) <span class="phys">∑F = 0, ∑τ ≠ 0</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="d" class="mr-2"> d) Net force equals weight</label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>14.</strong> Pitch of a sound is determined by its:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="a" class="mr-2"> a) Amplitude</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="b" class="mr-2"> b) Frequency</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="c" class="mr-2"> c) Speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="d" class="mr-2"> d) Wavelength</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>15.</strong> Loudness of a sound is related to its:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="a" class="mr-2"> a) Frequency</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="b" class="mr-2"> b) Amplitude/intensity</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="c" class="mr-2"> c) Speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="d" class="mr-2"> d) Phase</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>16.</strong> The Doppler effect causes a change in:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="a" class="mr-2"> a) Wave speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="b" class="mr-2"> b) Observed frequency</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="c" class="mr-2"> c) Wavelength only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="d" class="mr-2"> d) Amplitude only</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- Topic 5: Wave Interference & Standing Waves -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="5">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 5: Interference & Standing Waves</h2>
-      <ol class="space-y-4 text-sm">
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>17.</strong> Constructive interference occurs when waves meet:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="a" class="mr-2"> a) In phase (crest meets crest)</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="b" class="mr-2"> b) Out of phase (crest meets trough)</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="c" class="mr-2"> c) At right angles</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="d" class="mr-2"> d) With different frequencies</label>
+          <strong>14.</strong> An object tips over when its center of mass:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="a" class="mr-2"> a) Moves outside the base of support</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="b" class="mr-2"> b) Reaches maximum height</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="c" class="mr-2"> c) Aligns with the applied force</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="d" class="mr-2"> d) Reaches zero velocity</label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>18.</strong> A node in a standing wave is a point of:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="a" class="mr-2"> a) Maximum displacement</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="b" class="mr-2"> b) Zero displacement</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="c" class="mr-2"> c) Maximum speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="d" class="mr-2"> d) Minimum frequency</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>15.</strong> For a uniform symmetric object, the center of mass is located at:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="a" class="mr-2"> a) Its geometric center</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="b" class="mr-2"> b) Its top edge</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="c" class="mr-2"> c) Its bottom edge</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="d" class="mr-2"> d) Outside the object</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>19.</strong> For a string fixed at both ends, the fundamental frequency has:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="a" class="mr-2"> a) One node</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="b" class="mr-2"> b) Two nodes (ends) and one antinode</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="c" class="mr-2"> c) Three nodes</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="d" class="mr-2"> d) No nodes</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>20.</strong> Beat frequency is given by:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="a" class="mr-2"> a) f₁ + f₂</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="b" class="mr-2"> b) |f₁ - f₂|</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="c" class="mr-2"> c) f₁ × f₂</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="d" class="mr-2"> d) (f₁ + f₂)/2</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>16.</strong> In equilibrium, the net torque about ANY pivot point is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="a" class="mr-2"> a) Zero</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="b" class="mr-2"> b) Equal to weight</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="c" class="mr-2"> c) Maximum at the center</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="d" class="mr-2"> d) Dependent on axis choice</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 6: Electromagnetic Waves -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="6">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 6: Electromagnetic Waves & Spectrum</h2>
+    <!-- Topic 5: Impulse & Linear Momentum -->
+    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="5">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 5: Impulse & Linear Momentum</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>21.</strong> All electromagnetic waves travel at the same speed in:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="a" class="mr-2"> a) Any medium</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="b" class="mr-2"> b) Vacuum</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="c" class="mr-2"> c) Air only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="d" class="mr-2"> d) Water only</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) c ≈ 3×10⁸ m/s</div>
+          <strong>17.</strong> Linear momentum (p) is defined as:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="a" class="mr-2"> a) <span class="phys">FΔt</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="b" class="mr-2"> b) <span class="phys">mv</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="c" class="mr-2"> c) <span class="phys">ma</span></label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="d" class="mr-2"> d) <span class="phys">½mv²</span></label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>22.</strong> Which EM wave has the longest wavelength?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="a" class="mr-2"> a) Gamma rays</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="b" class="mr-2"> b) Visible light</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="c" class="mr-2"> c) Radio waves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="d" class="mr-2"> d) X-rays</label>
+          <strong>18.</strong> Impulse (J) is equal to:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="a" class="mr-2"> a) Change in kinetic energy</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="b" class="mr-2"> b) Change in momentum (Δp)</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="c" class="mr-2"> c) Net force only</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="d" class="mr-2"> d) Mass × acceleration</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>19.</strong> Airbags reduce injury during collisions by:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="a" class="mr-2"> a) Increasing collision time, decreasing force</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="b" class="mr-2"> b) Decreasing collision time, increasing force</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="c" class="mr-2"> c) Reducing the change in momentum</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="d" class="mr-2"> d) Increasing the car's mass</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>20.</strong> The SI unit of impulse is equivalent to:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="a" class="mr-2"> a) N/m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="b" class="mr-2"> b) N·s or kg·m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="c" class="mr-2"> c) J/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="d" class="mr-2"> d) kg·m²/s²</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Topic 6: Conservation of Momentum & Collisions -->
+    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="6">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 6: Conservation of Momentum & Collisions</h2>
+      <ol class="space-y-4 text-sm">
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>21.</strong> Momentum is conserved in a system when:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="a" class="mr-2"> a) Kinetic energy is constant</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="b" class="mr-2"> b) No external net force acts</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="c" class="mr-2"> c) Objects stick together</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="d" class="mr-2"> d) Velocity is zero</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>22.</strong> In an elastic collision:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="a" class="mr-2"> a) Both momentum and KE are conserved</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="b" class="mr-2"> b) Only momentum is conserved</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="c" class="mr-2"> c) Only KE is conserved</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="d" class="mr-2"> d) Neither is conserved</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>23.</strong> In a perfectly inelastic collision:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="a" class="mr-2"> a) Objects bounce apart</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="b" class="mr-2"> b) KE is fully conserved</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="c" class="mr-2"> c) Objects stick together, max KE loss</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="d" class="mr-2"> d) Momentum is not conserved</label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>23.</strong> The energy of a photon is proportional to its:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="a" class="mr-2"> a) Wavelength</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="b" class="mr-2"> b) Frequency</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="c" class="mr-2"> c) Speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="d" class="mr-2"> d) Amplitude</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) E = hf</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>24.</strong> Which EM wave is used for medical imaging of bones?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="a" class="mr-2"> a) Infrared</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="b" class="mr-2"> b) Ultraviolet</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="c" class="mr-2"> c) X-rays</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="d" class="mr-2"> d) Microwaves</label>
+          <strong>24.</strong> Two cars collide and move together afterward. This is a:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="a" class="mr-2"> a) Elastic collision</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="b" class="mr-2"> b) Partially elastic collision</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="c" class="mr-2"> c) Perfectly inelastic collision</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="d" class="mr-2"> d) Superelastic collision</label>
           <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 7: Wave Applications & Calculations -->
+    <!-- Topic 7: Applications & Calculations -->
     <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="7">
       <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 7: Applications & Calculations</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>25.</strong> A wave travels 120 m in 4 s. What is its speed?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="a" class="mr-2"> a) 15 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="b" class="mr-2"> b) 30 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="c" class="mr-2"> c) 480 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="d" class="mr-2"> d) 60 m/s</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) v = d/t = 120/4 = 30 m/s</div>
+          <strong>25.</strong> A wheel rotates at 10 rad/s with radius 0.5 m. Linear speed at the rim is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="a" class="mr-2"> a) 5 m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="b" class="mr-2"> b) 20 m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="c" class="mr-2"> c) 0.05 m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="d" class="mr-2"> d) 10.5 m/s</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a) v = rω = 0.5×10</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>26.</strong> If sound frequency is 440 Hz and speed is 343 m/s, wavelength is:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="a" class="mr-2"> a) 0.78 m</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="b" class="mr-2"> b) 1.28 m</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="c" class="mr-2"> c) 0.56 m</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="d" class="mr-2"> d) 2.15 m</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a) λ = v/f = 343/440 ≈ 0.78 m</div>
+          <strong>26.</strong> A 2 kg ball hits a wall at 3 m/s and rebounds at 2 m/s opposite direction. Impulse magnitude is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="a" class="mr-2"> a) 2 N·s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="b" class="mr-2"> b) 10 N·s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="c" class="mr-2"> c) 6 N·s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="d" class="mr-2"> d) 1 N·s</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) |Δp| = 2|(-2)-3| = 10</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>27.</strong> A car horn (500 Hz) approaches at 30 m/s. Observed frequency (v_sound=343 m/s):<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="a" class="mr-2"> a) ~455 Hz</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="b" class="mr-2"> b) ~500 Hz</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="c" class="mr-2"> c) ~548 Hz</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="d" class="mr-2"> d) ~600 Hz</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c) f' = f·v/(v-vₛ) ≈ 548 Hz</div>
+          <strong>27.</strong> An object in static equilibrium has:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="a" class="mr-2"> a) Zero net force and zero net torque</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="b" class="mr-2"> b) Constant velocity only</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="c" class="mr-2"> c) Non-zero acceleration</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="d" class="mr-2"> d) Maximum potential energy</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>28.</strong> Ultrasound is used in medical imaging because it:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="a" class="mr-2"> a) Has low frequency</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="b" class="mr-2"> b) Reflects well from tissue boundaries</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="c" class="mr-2"> c) Travels faster than light</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="d" class="mr-2"> d) Is visible to the eye</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>28.</strong> Which type of collision conserves kinetic energy?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="a" class="mr-2"> a) Elastic only</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="b" class="mr-2"> b) Inelastic only</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="c" class="mr-2"> c) Perfectly inelastic</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="d" class="mr-2"> d) All collisions</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
         </li>
       </ol>
     </section>
@@ -388,7 +388,7 @@
   </div>
 
   <footer class="max-w-4xl mx-auto mt-10 mb-8 text-center text-gray-500 text-sm no-print">
-    © Grade 11 Physics Exam | Waves & Sound | Inspire Curriculum | Auto-Grading System
+    © Grade 11 Physics Exam | Rotational Motion & Momentum | Inspire Curriculum | Auto-Grading System
   </footer>
 
   <script>
@@ -459,25 +459,25 @@
       let total = 0;
       const breakdown = [];
 
-      // Correct answers for 28 questions
+      // Correct answers for 28 questions (aligned with Nologia summary)
       const correctAnswers = [
-        'a','b','c','b', // Topic 1
-        'b','b','b','b', // Topic 2
-        'a','b','b','b', // Topic 3
-        'b','b','b','b', // Topic 4
-        'a','b','b','b', // Topic 5
-        'b','c','b','c', // Topic 6
-        'b','a','c','b'  // Topic 7
+        'a','b','c','a', // Topic 1: Kinematics
+        'b','a','c','a', // Topic 2: Dynamics & Torque
+        'b','a','a','b', // Topic 3: Inertia & Energy
+        'b','a','a','a', // Topic 4: Equilibrium
+        'b','b','a','b', // Topic 5: Impulse & Momentum
+        'b','a','c','c', // Topic 6: Conservation & Collisions
+        'a','b','a','a'  // Topic 7: Applications
       ];
 
       let topicScores = [0,0,0,0,0,0,0];
       const topicNames = [
-        "Wave Properties & Characteristics",
-        "Wave Types & Polarization",
-        "Wave Behavior (Reflection, Refraction, Diffraction)",
-        "Sound Waves & Properties",
-        "Interference & Standing Waves",
-        "Electromagnetic Waves & Spectrum",
+        "Rotational Kinematics",
+        "Rotational Dynamics & Torque",
+        "Moment of Inertia & Rotational Energy",
+        "Equilibrium & Center of Mass",
+        "Impulse & Linear Momentum",
+        "Conservation of Momentum & Collisions",
         "Applications & Calculations"
       ];
 
@@ -522,8 +522,7 @@
       let answersHTML = `<table style="border:1px solid #e5e7eb; border-collapse:collapse; width:100%; font-family:Arial; font-size:12px;">
         <tr style="background:#4F46E5; color:white;"><th style="border:1px solid #e5e7eb; padding:8px;">Q#</th><th style="border:1px solid #e5e7eb; padding:8px;">Topic</th><th style="border:1px solid #e5e7eb; padding:8px;">Selected</th><th style="border:1px solid #e5e7eb; padding:8px;">Status</th></tr>`;
       
-      const correctAnswers = ['a','b','c','b','b','b','b','b','a','b','b','b','b','b','b','b','a','b','b','b','b','c','b','c','b','a','c','b'];
-      const topics = ["Properties","Properties","Properties","Properties","Types","Types","Types","Types","Behavior","Behavior","Behavior","Behavior","Sound","Sound","Sound","Sound","Interference","Interference","Interference","Interference","EM","EM","EM","EM","Calc","Calc","Calc","Calc"];
+      const topics = ["Kinematics","Kinematics","Kinematics","Kinematics","Dynamics","Dynamics","Dynamics","Dynamics","Inertia","Inertia","Inertia","Inertia","Equilibrium","Equilibrium","Equilibrium","Equilibrium","Momentum","Momentum","Momentum","Momentum","Collisions","Collisions","Collisions","Collisions","AppCalc","AppCalc","AppCalc","AppCalc"];
       
       for(let i=1; i<=28; i++) {
         const sel = document.querySelector(`input[name="q${i}"]:checked`);
