@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grade 11 Physics (Inspire) - Chapter 3 Exam</title>
+  <title>Grade 11 Advanced Physics - Term 3 Comprehensive Exam</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <style>
@@ -30,15 +30,15 @@
 <body class="bg-gray-50 text-gray-800 p-4 md:p-8 min-h-screen">
 
   <!-- Timer -->
-  <div id="timer-container" class="max-w-4xl mx-auto mb-4 text-center no-print">
+  <div id="timer-container" class="max-w-5xl mx-auto mb-4 text-center no-print">
     <div class="bg-white p-4 rounded-xl shadow-md inline-block border-2 border-indigo-100">
       <span class="text-gray-600 mr-2">⏱️ Time Remaining:</span>
-      <span id="timer" class="text-2xl font-bold text-indigo-600 font-mono">30:00</span>
+      <span id="timer" class="text-2xl font-bold text-indigo-600 font-mono">120:00</span>
     </div>
   </div>
 
   <!-- Controls -->
-  <div class="max-w-4xl mx-auto mb-6 flex flex-wrap gap-3 justify-center no-print">
+  <div class="max-w-5xl mx-auto mb-6 flex flex-wrap gap-3 justify-center no-print">
     <button onclick="toggleAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition shadow cursor-pointer">
       👁️ Show / Hide Model Answers
     </button>
@@ -48,291 +48,289 @@
   </div>
 
   <!-- Header -->
-  <header class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-md mb-8 border-l-4 border-indigo-600">
+  <header class="max-w-5xl mx-auto bg-white p-6 rounded-xl shadow-md mb-8 border-l-4 border-indigo-600">
     <div class="text-center">
-      <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">⚛️ Grade 11 Physics (Inspire)</h1>
-      <h2 class="text-lg text-indigo-600 font-semibold">Chapter 3: Rotational Motion & Momentum</h2>
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">⚛️ Grade 11 Advanced Physics</h1>
+      <h2 class="text-lg text-indigo-600 font-semibold">Term 3 - Comprehensive Exam (25 Questions)</h2>
+      <p class="text-sm text-gray-500 mt-2">Rotational Motion, Torque, Momentum & Angular Momentum</p>
     </div>
     <div class="mt-4 flex flex-wrap justify-center gap-4 text-sm text-gray-600">
       <span>📅 Date: <input type="text" class="border-b border-gray-400 bg-transparent w-28 text-center"></span>
       <span>👤 Name: <input type="text" id="studentName" class="border-b border-gray-400 bg-transparent w-32 text-center" placeholder="Enter Name"></span>
-      <span>⏱️ Duration: 30 min</span>
-      <span>📊 Total: 100 Marks</span>
+      <span>⏱️ Duration: 120 min</span>
+      <span>📊 Total: 100 Marks (4 marks each)</span>
     </div>
     <p class="mt-2 text-xs text-center text-gray-500">💡 Note: All questions are multiple-choice. Select the best answer.</p>
   </header>
 
-  <main class="max-w-4xl mx-auto space-y-8">
+  <main class="max-w-5xl mx-auto space-y-8">
 
-    <!-- Topic 1: Rotational Kinematics -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="1">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 1: Rotational Kinematics</h2>
+    <!-- Section 1: Radians & Angular Displacement -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 1: Radians & Angular Displacement (Topics 1-2)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>1.</strong> The relationship between linear speed (v) and angular speed (ω) is:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="a" class="mr-2"> a) <span class="phys">v = rω</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="b" class="mr-2"> b) <span class="phys">v = ω/r</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="c" class="mr-2"> c) <span class="phys">v = r/ω</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="d" class="mr-2"> d) <span class="phys">v = ω²r</span></label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>1.</strong> Convert 120° to radians:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="a" class="mr-2"> a) π/3 rad</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="b" class="mr-2"> b) 2π/3 rad</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="c" class="mr-2"> c) π/2 rad</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q1" value="d" class="mr-2"> d) π rad</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 2π/3 rad</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>2.</strong> Angular acceleration (α) is defined as:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="a" class="mr-2"> a) <span class="phys">Δθ/Δt</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="b" class="mr-2"> b) <span class="phys">Δω/Δt</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="c" class="mr-2"> c) <span class="phys">v²/r</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="d" class="mr-2"> d) <span class="phys">rω</span></label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>2.</strong> If an object rotates clockwise, the angular displacement is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="a" class="mr-2"> a) Positive</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="b" class="mr-2"> b) Negative</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="c" class="mr-2"> c) Zero</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q2" value="d" class="mr-2"> d) Undefined</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) Negative</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>3.</strong> All points on a rigid rotating object share the same:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="a" class="mr-2"> a) Linear speed</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="b" class="mr-2"> b) Centripetal acceleration</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="c" class="mr-2"> c) Angular velocity (ω)</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="d" class="mr-2"> d) Radius</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>4.</strong> Convert 30 rpm to rad/s:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="a" class="mr-2"> a) π rad/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="b" class="mr-2"> b) 2π rad/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="c" class="mr-2"> c) 30 rad/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="d" class="mr-2"> d) 0.5 rad/s</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>3.</strong> The arc length of a circle with radius 2 m and central angle π/3 rad is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="a" class="mr-2"> a) π/3 m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="b" class="mr-2"> b) 2π/3 m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="c" class="mr-2"> c) π m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q3" value="d" class="mr-2"> d) 4π/3 m</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 2π/3 m (x = rθ = 2 × π/3)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 2: Rotational Dynamics & Torque -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="2">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 2: Rotational Dynamics & Torque</h2>
+    <!-- Section 2: Angular & Linear Velocity -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 2: Angular & Linear Velocity (Topics 3-4)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>5.</strong> Newton's second law for rotation is:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="a" class="mr-2"> a) <span class="phys">F = ma</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="b" class="mr-2"> b) <span class="phys">τ = Iα</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="c" class="mr-2"> c) <span class="phys">L = Iω</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="d" class="mr-2"> d) <span class="phys">τ = rF</span></label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>4.</strong> A rotating toy makes one complete counterclockwise rotation in 1 minute. What is its angular velocity?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="a" class="mr-2"> a) π rad/min</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="b" class="mr-2"> b) 2π rad/min</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="c" class="mr-2"> c) π/2 rad/min</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q4" value="d" class="mr-2"> d) 4π rad/min</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 2π rad/min</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>6.</strong> Torque depends on all EXCEPT:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="a" class="mr-2"> a) Angular velocity</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="b" class="mr-2"> b) Applied force magnitude</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="c" class="mr-2"> c) Distance from axis</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="d" class="mr-2"> d) Angle between force and lever arm</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>5.</strong> The relationship between linear velocity (v) and angular velocity (ω) is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="a" class="mr-2"> a) v = ω/r</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="b" class="mr-2"> b) v = rω</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="c" class="mr-2"> c) v = ω²r</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q5" value="d" class="mr-2"> d) v = r/ω</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) v = rω</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>7.</strong> Maximum torque is produced when the force is applied at an angle of:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="a" class="mr-2"> a) 0°</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="b" class="mr-2"> b) 45°</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="c" class="mr-2"> c) 90°</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="d" class="mr-2"> d) 180°</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>8.</strong> If the lever arm length doubles while force stays constant, torque:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="a" class="mr-2"> a) Doubles</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="b" class="mr-2"> b) Halves</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="c" class="mr-2"> c) Quadruples</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="d" class="mr-2"> d) Remains unchanged</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>6.</strong> A CD-ROM has linear velocity 1.4 m/s at radius 0.027 m. What is the angular velocity?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="a" class="mr-2"> a) 25.5 rad/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="b" class="mr-2"> b) 51.9 rad/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="c" class="mr-2"> c) 0.038 rad/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q6" value="d" class="mr-2"> d) 1.4 rad/s</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 51.9 rad/s (ω = v/r = 1.4/0.027)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 3: Moment of Inertia & Rotational Energy -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="3">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 3: Moment of Inertia & Rotational Energy</h2>
+    <!-- Section 3: Angular Acceleration -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 3: Angular Acceleration (Topic 5)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>9.</strong> Moment of inertia (I) measures an object's:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="a" class="mr-2"> a) Linear mass</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="b" class="mr-2"> b) Resistance to rotational acceleration</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="c" class="mr-2"> c) Center of mass position</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="d" class="mr-2"> d) Angular momentum</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>7.</strong> A clothes washer drum rotates at 635 rev/min and stops in 8.0 s. What is the angular acceleration?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="a" class="mr-2"> a) +8.31 rad/s²</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="b" class="mr-2"> b) -8.31 rad/s²</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="c" class="mr-2"> c) +66.5 rad/s²</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q7" value="d" class="mr-2"> d) -66.5 rad/s²</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) -8.31 rad/s² (negative = slowing down)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>10.</strong> For equal mass and radius, which has the largest I?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="a" class="mr-2"> a) Hoop (mass at rim)</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="b" class="mr-2"> b) Solid disk</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="c" class="mr-2"> c) Solid sphere</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="d" class="mr-2"> d) Point mass at center</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>11.</strong> Rotational kinetic energy is calculated as:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="a" class="mr-2"> a) <span class="phys">½Iω²</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="b" class="mr-2"> b) <span class="phys">Iω</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="c" class="mr-2"> c) <span class="phys">½mv²</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="d" class="mr-2"> d) <span class="phys">τθ</span></label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>12.</strong> An ice skater pulls arms in while spinning. What happens?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="a" class="mr-2"> a) I decreases, ω increases</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="b" class="mr-2"> b) I increases, ω decreases</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="c" class="mr-2"> c) Both I and ω decrease</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="d" class="mr-2"> d) Angular momentum decreases</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>8.</strong> Angular acceleration (α) is defined as:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="a" class="mr-2"> a) Δθ/Δt</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="b" class="mr-2"> b) Δω/Δt</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="c" class="mr-2"> c) ω/Δt</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q8" value="d" class="mr-2"> d) Δt/Δω</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) Δω/Δt</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 4: Equilibrium & Center of Mass -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="4">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 4: Equilibrium & Center of Mass</h2>
+    <!-- Section 4: Torque -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 4: Torque (Topics 6-8)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>13.</strong> Conditions for static equilibrium are:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="a" class="mr-2"> a) <span class="phys">∑F ≠ 0, ∑τ = 0</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="b" class="mr-2"> b) <span class="phys">∑F = 0 and ∑τ = 0</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="c" class="mr-2"> c) <span class="phys">∑F = 0, ∑τ ≠ 0</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="d" class="mr-2"> d) Net force equals weight</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>9.</strong> The formula for torque when force is applied at an angle θ is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="a" class="mr-2"> a) τ = Fr</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="b" class="mr-2"> b) τ = Frsinθ</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="c" class="mr-2"> c) τ = Frcosθ</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q9" value="d" class="mr-2"> d) τ = F/r</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) τ = Frsinθ</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>14.</strong> An object tips over when its center of mass:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="a" class="mr-2"> a) Moves outside the base of support</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="b" class="mr-2"> b) Reaches maximum height</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="c" class="mr-2"> c) Aligns with the applied force</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="d" class="mr-2"> d) Reaches zero velocity</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>10.</strong> Maximum torque occurs when the angle θ is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="a" class="mr-2"> a) 0°</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="b" class="mr-2"> b) 45°</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="c" class="mr-2"> c) 90°</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q10" value="d" class="mr-2"> d) 180°</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c) 90° (sin90° = 1)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>15.</strong> For a uniform symmetric object, the center of mass is located at:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="a" class="mr-2"> a) Its geometric center</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="b" class="mr-2"> b) Its top edge</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="c" class="mr-2"> c) Its bottom edge</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="d" class="mr-2"> d) Outside the object</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>11.</strong> A torque of 55.0 N·m requires a force of 135 N. What is the lever arm?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="a" class="mr-2"> a) 0.250 m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="b" class="mr-2"> b) 0.407 m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="c" class="mr-2"> c) 2.45 m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q11" value="d" class="mr-2"> d) 7.43 m</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 0.407 m (r = τ/F = 55/135)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>16.</strong> In equilibrium, the net torque about ANY pivot point is:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="a" class="mr-2"> a) Zero</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="b" class="mr-2"> b) Equal to weight</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="c" class="mr-2"> c) Maximum at the center</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="d" class="mr-2"> d) Dependent on axis choice</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>12.</strong> Counterclockwise torque is considered:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="a" class="mr-2"> a) Positive</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="b" class="mr-2"> b) Negative</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="c" class="mr-2"> c) Zero</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q12" value="d" class="mr-2"> d) Undefined</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a) Positive</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 5: Impulse & Linear Momentum -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="5">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 5: Impulse & Linear Momentum</h2>
+    <!-- Section 5: Moment of Inertia -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 5: Moment of Inertia (Topics 9-11)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>17.</strong> Linear momentum (p) is defined as:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="a" class="mr-2"> a) <span class="phys">FΔt</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="b" class="mr-2"> b) <span class="phys">mv</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="c" class="mr-2"> c) <span class="phys">ma</span></label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="d" class="mr-2"> d) <span class="phys">½mv²</span></label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>13.</strong> Moment of inertia (I) for a single point mass is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="a" class="mr-2"> a) I = mr</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="b" class="mr-2"> b) I = mr²</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="c" class="mr-2"> c) I = m/r</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q13" value="d" class="mr-2"> d) I = m²r</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) I = mr²</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>18.</strong> Impulse (J) is equal to:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="a" class="mr-2"> a) Change in kinetic energy</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="b" class="mr-2"> b) Change in momentum (Δp)</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="c" class="mr-2"> c) Net force only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="d" class="mr-2"> d) Mass × acceleration</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>14.</strong> If the distance from the axis doubles, the moment of inertia becomes:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="a" class="mr-2"> a) 2 times bigger</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="b" class="mr-2"> b) 4 times bigger</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="c" class="mr-2"> c) The same</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q14" value="d" class="mr-2"> d) Half</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 4 times bigger (I ∝ r²)</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>19.</strong> Airbags reduce injury during collisions by:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="a" class="mr-2"> a) Increasing collision time, decreasing force</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="b" class="mr-2"> b) Decreasing collision time, increasing force</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="c" class="mr-2"> c) Reducing the change in momentum</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="d" class="mr-2"> d) Increasing the car's mass</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>20.</strong> The SI unit of impulse is equivalent to:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="a" class="mr-2"> a) N/m</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="b" class="mr-2"> b) N·s or kg·m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="c" class="mr-2"> c) J/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="d" class="mr-2"> d) kg·m²/s²</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>15.</strong> Which object has the largest moment of inertia (same mass & radius)?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="a" class="mr-2"> a) Solid cylinder</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="b" class="mr-2"> b) Thin hoop</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="c" class="mr-2"> c) Uniform sphere</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q15" value="d" class="mr-2"> d) All equal</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) Thin hoop (I = mr²)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 6: Conservation of Momentum & Collisions -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="6">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 6: Conservation of Momentum & Collisions</h2>
+    <!-- Section 6: Newton's 2nd Law for Rotation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 6: Newton's 2nd Law for Rotation (Topic 12)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>21.</strong> Momentum is conserved in a system when:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="a" class="mr-2"> a) Kinetic energy is constant</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="b" class="mr-2"> b) No external net force acts</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="c" class="mr-2"> c) Objects stick together</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="d" class="mr-2"> d) Velocity is zero</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b)</div>
+          <strong>16.</strong> Newton's second law for rotational motion is:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="a" class="mr-2"> a) τ = I/α</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="b" class="mr-2"> b) τnet = Iα</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="c" class="mr-2"> c) τ = I + α</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q16" value="d" class="mr-2"> d) τ = α/I</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) τnet = Iα</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>22.</strong> In an elastic collision:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="a" class="mr-2"> a) Both momentum and KE are conserved</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="b" class="mr-2"> b) Only momentum is conserved</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="c" class="mr-2"> c) Only KE is conserved</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="d" class="mr-2"> d) Neither is conserved</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>23.</strong> In a perfectly inelastic collision:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="a" class="mr-2"> a) Objects bounce apart</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="b" class="mr-2"> b) KE is fully conserved</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="c" class="mr-2"> c) Objects stick together, max KE loss</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="d" class="mr-2"> d) Momentum is not conserved</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
-        </li>
-        <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>24.</strong> Two cars collide and move together afterward. This is a:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="a" class="mr-2"> a) Elastic collision</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="b" class="mr-2"> b) Partially elastic collision</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="c" class="mr-2"> c) Perfectly inelastic collision</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="d" class="mr-2"> d) Superelastic collision</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c)</div>
+          <strong>17.</strong> A pulley with radius 0.150 m has a force of 13.0 N applied. What is the torque?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="a" class="mr-2"> a) 0.87 N·m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="b" class="mr-2"> b) 1.95 N·m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="c" class="mr-2"> c) 13.0 N·m</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q17" value="d" class="mr-2"> d) 86.7 N·m</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 1.95 N·m (τ = Fr = 13.0 × 0.150)</div>
         </li>
       </ol>
     </section>
 
-    <!-- Topic 7: Applications & Calculations -->
-    <section class="bg-white p-6 rounded-xl shadow-lg" data-topic="7">
-      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Topic 7: Applications & Calculations</h2>
+    <!-- Section 7: Center of Mass & Equilibrium -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 7: Center of Mass & Equilibrium (Topics 13-14)</h2>
       <ol class="space-y-4 text-sm">
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>25.</strong> A wheel rotates at 10 rad/s with radius 0.5 m. Linear speed at the rim is:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="a" class="mr-2"> a) 5 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="b" class="mr-2"> b) 20 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="c" class="mr-2"> c) 0.05 m/s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="d" class="mr-2"> d) 10.5 m/s</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a) v = rω = 0.5×10</div>
+          <strong>18.</strong> The center of mass of an object:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="a" class="mr-2"> a) Must always be where there is mass</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="b" class="mr-2"> b) Can be in a place where there is no actual mass</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="c" class="mr-2"> c) Is always at the geometric center</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q18" value="d" class="mr-2"> d) Cannot be found experimentally</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) Can be in a place where there is no actual mass</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>26.</strong> A 2 kg ball hits a wall at 3 m/s and rebounds at 2 m/s opposite direction. Impulse magnitude is:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="a" class="mr-2"> a) 2 N·s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="b" class="mr-2"> b) 10 N·s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="c" class="mr-2"> c) 6 N·s</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q26" value="d" class="mr-2"> d) 1 N·s</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) |Δp| = 2|(-2)-3| = 10</div>
+          <strong>19.</strong> For static equilibrium, which conditions must be met?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="a" class="mr-2"> a) ΣF = 0 only</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="b" class="mr-2"> b) Στ = 0 only</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="c" class="mr-2"> c) Both ΣF = 0 and Στ = 0</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q19" value="d" class="mr-2"> d) Neither is required</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: c) Both ΣF = 0 and Στ = 0</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Section 8: Impulse & Momentum -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 8: Impulse & Linear Momentum (Topics 15-19)</h2>
+      <ol class="space-y-4 text-sm">
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>20.</strong> Impulse (J) is equal to:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="a" class="mr-2"> a) F/Δt</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="b" class="mr-2"> b) FΔt = Δp</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="c" class="mr-2"> c) mv</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q20" value="d" class="mr-2"> d) m/v</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) FΔt = Δp</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>27.</strong> An object in static equilibrium has:<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="a" class="mr-2"> a) Zero net force and zero net torque</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="b" class="mr-2"> b) Constant velocity only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="c" class="mr-2"> c) Non-zero acceleration</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q27" value="d" class="mr-2"> d) Maximum potential energy</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>21.</strong> Linear momentum (p) is defined as:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="a" class="mr-2"> a) ma</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="b" class="mr-2"> b) mv</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="c" class="mr-2"> c) m/v</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q21" value="d" class="mr-2"> d) FΔt</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) mv</div>
         </li>
         <li class="border-l-4 border-indigo-500 pl-4 py-2">
-          <strong>28.</strong> Which type of collision conserves kinetic energy?<br>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="a" class="mr-2"> a) Elastic only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="b" class="mr-2"> b) Inelastic only</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="c" class="mr-2"> c) Perfectly inelastic</label>
-          <label class="ml-4 cursor-pointer"><input type="radio" name="q28" value="d" class="mr-2"> d) All collisions</label>
-          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: a)</div>
+          <strong>22.</strong> A 2200 kg vehicle traveling at 26 m/s stops. What is the change in momentum?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="a" class="mr-2"> a) +5.7×10⁴ kg·m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="b" class="mr-2"> b) -5.7×10⁴ kg·m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="c" class="mr-2"> c) 0 kg·m/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q22" value="d" class="mr-2"> d) 57 kg·m/s</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) -5.7×10⁴ kg·m/s (Δp = 0 - 57200)</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Section 9: Angular Momentum -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 9: Angular Momentum (Topics 20-21)</h2>
+      <ol class="space-y-4 text-sm">
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>23.</strong> Angular momentum (L) is defined as:<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="a" class="mr-2"> a) L = mv</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="b" class="mr-2"> b) L = Iω</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="c" class="mr-2"> c) L = I/ω</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q23" value="d" class="mr-2"> d) L = mvr</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) L = Iω</div>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>24.</strong> An ice skater has I = 0.50 kg·m² and ω = 2.5 rotations/s. What is L?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="a" class="mr-2"> a) 1.25 kg·m²/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="b" class="mr-2"> b) 7.9 kg·m²/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="c" class="mr-2"> c) 0.50 kg·m²/s</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q24" value="d" class="mr-2"> d) 2.5 kg·m²/s</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) 7.9 kg·m²/s (L = Iω = 0.50 × 2.5 × 2π)</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Section 10: Conservation Laws -->
+    <section class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 text-indigo-700">🔹 Part 10: Conservation of Momentum (Topics 22-25)</h2>
+      <ol class="space-y-4 text-sm">
+        <li class="border-l-4 border-indigo-500 pl-4 py-2">
+          <strong>25.</strong> When an ice skater pulls arms in during a spin, what happens?<br>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="a" class="mr-2"> a) Moment of inertia increases, speed decreases</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="b" class="mr-2"> b) Moment of inertia decreases, speed increases</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="c" class="mr-2"> c) Both remain constant</label>
+          <label class="ml-4 cursor-pointer"><input type="radio" name="q25" value="d" class="mr-2"> d) Angular momentum decreases</label>
+          <div class="answer-box text-green-700 mt-2 font-medium">✅ Answer: b) Moment of inertia decreases, speed increases (conservation of L)</div>
         </li>
       </ol>
     </section>
@@ -353,7 +351,7 @@
   </main>
 
   <!-- Results Panel -->
-  <div id="results-panel" class="max-w-4xl mx-auto mt-8 bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-emerald-500 fade-in no-print">
+  <div id="results-panel" class="max-w-5xl mx-auto mt-8 bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-emerald-500 fade-in no-print">
     <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">📊 Exam Results</h2>
     
     <div class="grid md:grid-cols-3 gap-4 mb-6">
@@ -387,8 +385,8 @@
     </div>
   </div>
 
-  <footer class="max-w-4xl mx-auto mt-10 mb-8 text-center text-gray-500 text-sm no-print">
-    © Grade 11 Physics Exam | Rotational Motion & Momentum | Inspire Curriculum | Mr. Mohammed Hesham
+  <footer class="max-w-5xl mx-auto mt-10 mb-8 text-center text-gray-500 text-sm no-print">
+    © Grade 11 Advanced Physics | Term 3 - Comprehensive Exam | Auto-Grading System | Mr. Mohammed Hesham
   </footer>
 
   <script>
@@ -404,7 +402,7 @@
     (function(){ emailjs.init(PUBLIC_KEY); })();
 
     // Timer functionality
-    let timeRemaining = 1800; // 30 minutes in seconds
+    let timeRemaining = 7200; // 120 minutes in seconds
     let timerInterval;
 
     function startTimer() {
@@ -459,34 +457,40 @@
       let total = 0;
       const breakdown = [];
 
-      // Correct answers for 28 questions (aligned with Nologia summary)
+      // Correct answers for 25 questions
       const correctAnswers = [
-        'a','b','c','a', // Topic 1: Kinematics
-        'b','a','c','a', // Topic 2: Dynamics & Torque
-        'b','a','a','b', // Topic 3: Inertia & Energy
-        'b','a','a','a', // Topic 4: Equilibrium
-        'b','b','a','b', // Topic 5: Impulse & Momentum
-        'b','a','c','c', // Topic 6: Conservation & Collisions
-        'a','b','a','a'  // Topic 7: Applications
+        'b','b','b', // Q1-3: Radians & Arc
+        'b','b','b', // Q4-6: Velocity
+        'b','b',     // Q7-8: Angular Accel
+        'b','c','b','a', // Q9-12: Torque
+        'b','b','b', // Q13-15: Moment of Inertia
+        'b','b',     // Q16-17: Newton's 2nd Law
+        'b','c',     // Q18-19: Center of Mass & Equilibrium
+        'b','b','b', // Q20-22: Impulse & Momentum
+        'b','b',     // Q23-24: Angular Momentum
+        'b'          // Q25: Conservation
       ];
 
-      let topicScores = [0,0,0,0,0,0,0];
+      let topicScores = [0,0,0,0,0,0,0,0,0,0];
       const topicNames = [
-        "Rotational Kinematics",
-        "Rotational Dynamics & Torque",
-        "Moment of Inertia & Rotational Energy",
-        "Equilibrium & Center of Mass",
+        "Radians & Arc Length",
+        "Angular & Linear Velocity",
+        "Angular Acceleration",
+        "Torque",
+        "Moment of Inertia",
+        "Newton's 2nd Law (Rotation)",
+        "Center of Mass & Equilibrium",
         "Impulse & Linear Momentum",
-        "Conservation of Momentum & Collisions",
-        "Applications & Calculations"
+        "Angular Momentum",
+        "Conservation Laws"
       ];
 
-      for(let i=1; i<=28; i++){
+      for(let i=1; i<=25; i++){
         const selected = document.querySelector(`input[name="q${i}"]:checked`);
         const match = selected && selected.value === correctAnswers[i-1];
         if(match) {
-          total += 3.57; // 100/28 ≈ 3.57 per question
-          topicScores[Math.floor((i-1)/4)] += 3.57;
+          total += 4; // 4 marks per question
+          topicScores[Math.floor((i-1)/3)] += 4;
         }
         const parent = document.querySelector(`input[name="q${i}"]`).closest('li');
         parent.classList.add(match ? 'correct' : 'incorrect');
@@ -494,7 +498,7 @@
 
       total = Math.round(total);
       topicScores.forEach((score, idx) => {
-        breakdown.push(`<div class="flex justify-between p-2 bg-white rounded"><span>${topicNames[idx]}</span><span class="font-bold text-indigo-700">${Math.round(score)}/14</span></div>`);
+        breakdown.push(`<div class="flex justify-between p-2 bg-white rounded"><span>${topicNames[idx]}</span><span class="font-bold text-indigo-700">${score}/12</span></div>`);
       });
 
       document.getElementById('res-name').textContent = name;
@@ -522,9 +526,9 @@
       let answersHTML = `<table style="border:1px solid #e5e7eb; border-collapse:collapse; width:100%; font-family:Arial; font-size:12px;">
         <tr style="background:#4F46E5; color:white;"><th style="border:1px solid #e5e7eb; padding:8px;">Q#</th><th style="border:1px solid #e5e7eb; padding:8px;">Topic</th><th style="border:1px solid #e5e7eb; padding:8px;">Selected</th><th style="border:1px solid #e5e7eb; padding:8px;">Status</th></tr>`;
       
-      const topics = ["Kinematics","Kinematics","Kinematics","Kinematics","Dynamics","Dynamics","Dynamics","Dynamics","Inertia","Inertia","Inertia","Inertia","Equilibrium","Equilibrium","Equilibrium","Equilibrium","Momentum","Momentum","Momentum","Momentum","Collisions","Collisions","Collisions","Collisions","AppCalc","AppCalc","AppCalc","AppCalc"];
+      const topics = ["Radians","Radians","Radians","Velocity","Velocity","Velocity","AngAccel","AngAccel","Torque","Torque","Torque","Torque","Inertia","Inertia","Inertia","Newton2","Newton2","CenterMass","Equilibrium","Impulse","Momentum","Momentum","AngMom","AngMom","Conservation"];
       
-      for(let i=1; i<=28; i++) {
+      for(let i=1; i<=25; i++) {
         const sel = document.querySelector(`input[name="q${i}"]:checked`);
         const isCorrect = sel && sel.value === correctAnswers[i-1];
         answersHTML += `<tr><td style="border:1px solid #e5e7eb; padding:6px;">${i}</td><td style="border:1px solid #e5e7eb; padding:6px;">${topics[i-1]}</td><td style="border:1px solid #e5e7eb; padding:6px;">${sel ? sel.value.toUpperCase() : '-'}</td><td style="border:1px solid #e5e7eb; padding:6px; color:${isCorrect ? 'green' : 'red'}">${isCorrect ? '✅' : '❌'}</td></tr>`;
